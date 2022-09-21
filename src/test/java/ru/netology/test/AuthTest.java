@@ -33,7 +33,7 @@ class AuthTest {
                 " Неверно указан логин или пароль")).shouldBe(Condition.visible, Duration.ofSeconds(15));
     }
 
-   /* @Test
+    @Test
     @DisplayName("Should get error message if login with blocked registered user")
     void shouldGetErrorIfBlockedUser() {
         var blockedUser = getRegisteredUser("blocked");
@@ -43,7 +43,7 @@ class AuthTest {
         $("[data-test-id='error-notification']").shouldHave(Condition.text("Ошибка!" +
                 " Пользователь заблокирован")).shouldBe(Condition.visible, Duration.ofSeconds(15));
 
-    }  */
+    }  
 
     @Test
     @DisplayName("Should get error message if login with wrong login")
